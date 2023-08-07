@@ -9,7 +9,7 @@ class Api {
   }
 
   async generateRequest(endpoint, data) {
-    const { uri, method } = this.endpoints[endpoint];
+    const { uri, method } = this.endpoints[endpoint]; 
 
     return fetch(`${this.baseUrl}${uri}`, { method, body: data });
   }

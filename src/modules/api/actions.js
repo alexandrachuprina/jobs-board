@@ -5,13 +5,16 @@ export const API_ACTIONS = {
 };
 
 export const apiActions = {
-  fetch: (endpoint, payload) => {
-    type: `${API_ACTIONS.FETCH_START}${endpoint.toUpperCase()}`, payload;
-  },
-  fetchSuccess: (endpoint, payload) => {
-    type: `${API_ACTIONS.FETCH_SUCCESS}${endpoint.toUpperCase()}`, payload;
-  },
-  fetchFailure: (endpoint, payload) => {
-    type: `${API_ACTIONS.FETCH_FAILURE}${endpoint.toUpperCase()}`, payload;
-  },
+  fetch: (endpoint, payload) => ({
+    type: `${API_ACTIONS.FETCH_START}${endpoint.toUpperCase()}`,  // FETCH_START_JOBS
+    payload,
+  }),
+  fetchSuccess: (endpoint, payload) => ({
+    type: `${API_ACTIONS.FETCH_SUCCESS}${endpoint.toUpperCase()}`,
+    payload,
+  }),
+  fetchFailure: (endpoint, payload) => ({
+    type: `${API_ACTIONS.FETCH_FAILURE}${endpoint.toUpperCase()}`,
+    payload,
+  }),
 };
