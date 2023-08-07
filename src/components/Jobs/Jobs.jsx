@@ -18,7 +18,7 @@ const Jobs = () => {
     }
   }, [])
 
-  console.log(state)
+  // console.log(state)
 
   return (
     <div>Jobs</div>
