@@ -1,5 +1,7 @@
 ## Jobs board 
 
+## Work in progress 
+
 ### Технологический стек
 1. JavaScript
 2. React.js
